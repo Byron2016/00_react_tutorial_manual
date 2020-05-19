@@ -9,3 +9,5 @@
 007 -> Creando una cadena de herramientas desde cero
 008 -> Enlaces CDN
 009 -> Presentando JSX
+010 -> RENDERIZADO DE ELEMENTOS
+

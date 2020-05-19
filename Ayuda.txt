@@ -170,7 +170,18 @@
             - JSX representa objetos
                 - Babel compila JSX a llamadas de React.createElement()
 
-                
+        - RENDERIZADO DE ELEMENTOS
+            - Nodo Raiz: <div id="root"></div>
+                - Todo lo que está dentro será renderizado por ReactDOM
+
+            - Actualizando el elemento renderizado
+                - Los elementos de React son inmutables. Una vez creas un elemento, no puedes cambiar sus hijos o atributos.
+                - En la práctica, la mayoría de las aplicaciones de React solo llaman a ReactDOM.render() una vez. En las siguientes secciones aprenderemos cómo el código se puede encapsular en componentes con estado.
+
+            - React solo actualiza lo que es necesario
+                - React DOM compara el elemento y su hijos con el elemento anterior, y solo aplica las actualizaciones del DOM que son necesarias para que el DOM esté en el estado deseado
+                - Puedes verificarlo con un reloj, ejemmplor root_06
+                   
 
 
 

@@ -13,69 +13,75 @@
 <body>
   <h1>Hello, world!</h1>
   <div id="like_button_container"></div>
-
-    <h2>Add React in One Minute</h2>
-    <p>This page demonstrates using React with no build tooling.</p>
-    <p>React is loaded as a script tag.</p>
-
-    <p>
-      This is the first comment.
-      <div class="like_button_container" data-bv_prop_personalizada="1"></div>
-    </p>
-
-    <p>
-      This is the second comment.
-      <div class="like_button_container" data-bv_prop_personalizada="2"></div>
-    </p>
-
-    <p>
-      This is the third comment.
-      <div class="like_button_container" data-bv_prop_personalizada="3"></div>
-    </p>
-
-    <div id="root"></div>
-
-    <script type="text/babel">
-
-      ReactDOM.render(
+  <h2>Add React in One Minute</h2>
+  <p>This page demonstrates using React with no build tooling.</p>
+  <p>React is loaded as a script tag.</p>
+  <p>
+    This is the first comment.
+    <div class="like_button_container" data-bv_prop_personalizada="1"></div>
+  </p>
+  <p>
+    This is the second comment.
+    <div class="like_button_container" data-bv_prop_personalizada="2"></div>
+  </p>
+  <p>
+    This is the third comment.
+    <div class="like_button_container" data-bv_prop_personalizada="3"></div>
+  </p>
+  <div id="root"></div>
+  <script type="text/babel">
+    ReactDOM.render(
         <h1>Hello, world!</h1>,
         document.getElementById('root')
       );
 
     </script>
+  <div id="root_04"></div>
+  <div id="root_05"></div>
+  <script type="text/babel">
+    const name = 'Josh Perez';
 
-    <div id="root_04"></div>
-    <div id="root_05"></div>
+    function formatName(user) {
+      return user.firstName + ' ' + user.lastName;
+    }
 
-    <script type="text/babel">
+    const user = {
+       firstName: 'Harper',
+       lastName: 'Perez'
+    };
 
-      const name = 'Josh Perez';
+    const element = (
+    <div>
+      <h1>Hello, {name}</h1>
+        <h1>
+         Hello, {formatName(user)}!
+         </h1>
+    </div>
+    );
 
-function formatName(user) {
-  return user.firstName + ' ' + user.lastName;
-}
-
-const user = {
-  firstName: 'Harper',
-  lastName: 'Perez'
-};
-
-const element = (
-<div>
-<h1>Hello, {name}</h1>
-  <h1>
-    Hello, {formatName(user)}!
-  </h1>
-</div>
-);
-
-ReactDOM.render(
-  element,
-  document.getElementById('root_05')
-);
+    ReactDOM.render(
+       element,
+       document.getElementById('root_05')
+    );
 
     </script>
 
+    <div id="root_06"></div>
+
+  <script type="text/babel">
+function tick() {
+  const element = (
+    <div>
+      <h1>Hello, world!</h1>
+      <h2>It is {new Date().toLocaleTimeString()}.</h2>
+    </div>
+  );
+  ReactDOM.render(element, document.getElementById('root_06'));
+}
+tick();
+setInterval(tick, 1000);
+
+    </script>
 
 
 
@@ -84,7 +90,6 @@ ReactDOM.render(
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
   <!-- Cargar React. -->
   <!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
@@ -92,15 +97,11 @@ ReactDOM.render(
   <!-- Cargamos nuestro componente de React. -->
   <script src="../src/components/like_button.js"></script>
   <script src="../src/components/like_button_01.js"></script>
-  
   <!-- Transpilador para JSX. -->
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
   <script src="../src/components/like_button_02.js"></script>
-
   <script src="../src/components/like_button_03.js"></script>
-
   <script src="../src/components/like_button_04.js"></script>
-  
   <!-- Insertando expresiones en JSX -->
   <!-- <script src="../src/components/like_button_05.js"></script> -->
 </body>
