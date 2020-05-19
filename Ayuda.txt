@@ -34,4 +34,12 @@
             <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
             <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
+        - Opcional: Prueba React con JSX
+        	- Agregar un transpilador a la página.
+        		- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        		- Para pruebas: https://babeljs.io/en/repl#?browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=FAAhB4CMFcBdYPYDsTIMIBsCWBjA1gLwDeAFAJQgEB8IsAFlgM4B0jAprAMqwCGsbJIiGx42AEwBctAE7Q2IAL5kFVUGBAAZLKLXgA9DHjJVQA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=false&targets=&version=7.4.3&externalPlugins=
+        		
+        		- Ahora puedes usar JSX en cualquier etiqueta de <script> al agregarle el atributo type="text/babel".
+
 
