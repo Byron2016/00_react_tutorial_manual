@@ -44,6 +44,38 @@
 
     </script>
 
+    <div id="root_04"></div>
+    <div id="root_05"></div>
+
+    <script type="text/babel">
+
+      const name = 'Josh Perez';
+
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+
+const element = (
+<div>
+<h1>Hello, {name}</h1>
+  <h1>
+    Hello, {formatName(user)}!
+  </h1>
+</div>
+);
+
+ReactDOM.render(
+  element,
+  document.getElementById('root_05')
+);
+
+    </script>
+
 
 
 
@@ -66,6 +98,11 @@
   <script src="../src/components/like_button_02.js"></script>
 
   <script src="../src/components/like_button_03.js"></script>
+
+  <script src="../src/components/like_button_04.js"></script>
+  
+  <!-- Insertando expresiones en JSX -->
+  <!-- <script src="../src/components/like_button_05.js"></script> -->
 </body>
 
 </html>

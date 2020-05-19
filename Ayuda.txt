@@ -114,7 +114,63 @@
                             - https://www.youtube.com/watch?v=ue6oEH_NeNY
                             - https://developer.mozilla.org/es/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
                 
+                - Canales de lanzamiento (Release Channels)
+                    - Latest: es para versión ESTABLE de React, es la que se usa con npm. Es la que se recomienda
+                    - Next: Equivaldría a una Release Candidate RC
+                    - Experimental: 
 
+
+    - COMCEPTOS PRINCIPALES
+        - Presentando JSX
+            - const element = <h1>Hello, world!</h1>;
+
+            - Recomendamos usarlo con React
+            - JSX produce elementos de React
+            - La lógica de renderizado está unida a la lógica de la interfaz de usaurio.
+                - Cómo se manejan los eventos
+                - Cómo cambia el estado con el tiempo
+                - cómo se preparan los datos para su visualización.
+
+            - React lugar de separar artificialmente las tecnologías poniendo por separado el maquetado y la lógica. React SEPARA INTERESES, con unidades ligeramente acopladas llamadas "COMPONENTES." que contiene ambas.
+
+        - Insertando expresiones en JSX
+            - Especificando atributos con JSX
+                - Puedes utilizar comillas para especificar strings literales como atributos:
+                    - const element = <div tabIndex="0"></div>;
+
+                - También puedes usar llaves para insertar una expresión JavaScript en un atributo:
+                    - const element = <img src={user.avatarUrl}></img>;
+
+                - Dado que JSX es más cercano a JavaScript que a HTML, React DOM usa la convención de nomenclatura camelCase en vez de nombres de atributos HTML.
+                Por ejemplo, class se vuelve className en JSX, y tabindex se vuelve tabIndex.
+
+            - Especificando hijos con JSX
+                - Etiqueta vacía usar: />
+                - Para más de un elemento, encerrarlos en un contenedor <div>
+
+                    const element = (
+                        <div>
+                            <h1>
+                            <h2>
+
+                        </div>
+
+                    );
+
+            - JSX previene ataques de inyección
+
+                - Por defecto, React DOM escapa cualquier valor insertado en JSX antes de renderizarlo
+                - Todo es convertido en un string antes de ser renderizado
+                - Esto ayuda a prevenir vulnerabilidades XSS (cross-site-scripting)
+
+                    const title = response.potentiallyMaliciousInput;
+                    // Esto es seguro:
+                    const element = <h1>{title}</h1>;
+
+            - JSX representa objetos
+                - Babel compila JSX a llamadas de React.createElement()
+
+                
 
 
 
