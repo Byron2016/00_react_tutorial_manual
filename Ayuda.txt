@@ -181,7 +181,47 @@
             - React solo actualiza lo que es necesario
                 - React DOM compara el elemento y su hijos con el elemento anterior, y solo aplica las actualizaciones del DOM que son necesarias para que el DOM esté en el estado deseado
                 - Puedes verificarlo con un reloj, ejemmplor root_06
-                   
+
+        - COMPONENTES Y PROPIEDADES
+            - Permiten separar la interfaz de usuario en:
+                - piezas independients.
+                - piezas reutilizables,
+                - Pensar en cada pieza en forma aislada.
+            - Tipos
+                - Componentes funcionales
+                - Componentes de Clase
+
+                - Componentes funcionales
+                    - Es una función en jv.
+                    - Características
+                        - Aceptar un solo argumento de objeto "props"
+                        - devolver un elemento de React.
+                        - Ejemplo:
+
+                        function Welcome(props) {
+                            return <h1>Hello, {props.name}</h1>;
+                        } 
+
+                        const element = <Welcome name="Sara" />;
+                        ReactDOM.render(
+                        element,
+                        document.getElementById('root')
+                        );
+
+                        - Llamamos a ReactDOM.render() con el elemento <Welcome name="Sara" />.
+                        - React llama al componente Welcome con {name: 'Sara'} como “props”.
+                        - Nuestro componente Welcome devuelve un elemento <h1>Hello, Sara</h1> como resultado.
+                        - React DOM actualiza eficientemente el DOM para que coincida con <h1>Hello, Sara</h1>.
+
+
+                - Iniciar SIEMPRE los nombres de los componentes con letra MAYÚSCULA.
+                    - React trata los componentes que empiezan con letras minúsculas como etiquetas del DOM
+                        - <div /> representa una etiqueta div HTML
+                        - <Welcome /> representa un componente y requiere que Welcome esté definido
+
+                
+
+
 
 
 
