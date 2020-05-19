@@ -42,4 +42,9 @@
         		
         		- Ahora puedes usar JSX en cualquier etiqueta de <script> al agregarle el atributo type="text/babel".
 
-
+        - Agregar JSX a un proyecto
+            - npm init -y
+            - npm install babel-cli babel-preset-react-app
+            - Ejecuta el preprocesador de JSX
+                - Crear carpeta src
+                - npx babel --watch src --out-dir . --presets react-app/prod

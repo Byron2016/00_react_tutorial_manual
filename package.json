@@ -1,0 +1,24 @@
+{
+  "name": "00_react_tutorial_manual",
+  "version": "1.0.0",
+  "description": "001 -> AGREGAR REACT A UN SITIO WEB 002 -> Reusar un componente 003 -> Compactar JavaScript para producción 004 -> Prueba React con JSX 005 -> Agregar JSX a un proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Byron2016/00_react_tutorial_manual.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Byron2016/00_react_tutorial_manual/issues"
+  },
+  "homepage": "https://github.com/Byron2016/00_react_tutorial_manual#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^9.1.2"
+  }
+}
