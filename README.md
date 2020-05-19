@@ -11,4 +11,4 @@
 009 -> Presentando JSX
 010 -> RENDERIZADO DE ELEMENTOS
 011 -> COMPONENTES Y PROPIEDADES
-
+012 -> Las props son de solo lectura

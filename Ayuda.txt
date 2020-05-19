@@ -219,7 +219,29 @@
                         - <div /> representa una etiqueta div HTML
                         - <Welcome /> representa un componente y requiere que Welcome esté definido
 
-                
+            - Composición de componentes
+                - Los componentes pueden referirse a otros componentes en su salida
+                - Esto nos permite utilizar la misma abstracción de componente para cualquier nivel de detalle
+                - Ejemplo root_07
+
+            - Extracción de componentes
+                - No tengas miedo de dividir los componentes en otros más pequeños.
+                - Ejemplo root_08
+                    - Como está dificil es complicado de cambiar debido a todo el anidamiento
+                    - Es dificil de utilizar partes individuales de él.
+                    - se lo mejorará en Ejemplo root_09
+                - Ejemplo root_09
+                - Extraer componentes puede parecer un trabajo pesado al principio, pero tener una paleta de componentes reutilizables vale la pena en aplicaciones más grandes. Una buena regla en general es que si una parte de su interfaz de usuario se usa varias veces (Button, Panel, Avatar), o es lo suficientemente compleja por sí misma (App, FeedStory, Comment), es buen candidato para ser un componente reutilizable.
+
+            - Las props son de solo lectura
+                - Ya sea que declares un componente como una función o como una clase, este nunca debe modificar sus props.
+                - Tales funciones son llamadas “puras” porque no tratan de cambiar sus entradas, y siempre devuelven el mismo resultado para las mismas entradas
+                - React es bastante flexible pero tiene una sola regla estricta:
+                    - Todos los componentes de React deben actuar como funciones puras con respecto a sus props.
+                - Para hacerlo interactivo se usará el concepto de "ESTADO"
+
+
+
 
 
 
