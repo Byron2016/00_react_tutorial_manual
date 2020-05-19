@@ -29,5 +29,9 @@
         - Reusar un componente
         	- Puede colocar la etiqueta div donde lo requiera y reusar el componente.
 
+        - Consejo: Compactar JavaScript para producción
+
+            <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
 
