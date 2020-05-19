@@ -26,3 +26,8 @@
         - Crear el Componente de React
             - like_button.js
 
+        - Reusar un componente
+        	- Puede colocar la etiqueta div donde lo requiera y reusar el componente.
+
+
+
