@@ -6,3 +6,4 @@
 004 -> Prueba React con JSX
 005 -> Agregar JSX a un proyecto
 006 -> Cadena de herramientas recomendadas
+007 -> Creando una cadena de herramientas desde cero
