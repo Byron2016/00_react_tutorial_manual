@@ -5,3 +5,4 @@
 003 -> Compactar JavaScript para producción
 004 -> Prueba React con JSX
 005 -> Agregar JSX a un proyecto
+006 -> Cadena de herramientas recomendadas

@@ -48,3 +48,47 @@
             - Ejecuta el preprocesador de JSX
                 - Crear carpeta src
                 - npx babel --watch src --out-dir . --presets react-app/prod
+
+    - CREAR UNA NUEVA APLICACIÓN REACT 
+        - Para obtener la mejor experiencia de usuario y desarrollador use una cadena de herramientas integrada. Que permiten:
+            - Escalar a múltiples archivos y componentes.
+            - Usar bibliotecas de terceros desde npm.
+            - Detección temprana de errores comunes.
+            - Edición en vivo de CSS y JS en desarrollo.
+            - Optimización de la salida para producción.
+
+        - Cadena de herramientas recomendadas
+            - Si estas aprendiendo : usa Create React App.
+            - Si estas creando una nueva aplicación de página única: Usa Create React App.
+            - Si estás construyendo un sito web renderizado en servidor con Node.js, prueba Next.js.
+            - Si estás construyendo un sitio web orientado a contenido estático, prueba Gatsby.
+            - Si estás construyendo una biblioteca de componentes o integrando una base de código existente, prueba Cadenas de Herramientas más Flexibles.
+
+            - Create React App
+                - Es una buena opción para construir una nueva aplicación DE PÁGINA ÚNICA.
+                    - Cuando estés listo para desplegar a producción, ejecuta npm run build lo
+                      cual crea una compilación optimizada de tu aplicación en el directorio build
+
+            - Next.js
+                - Es un framework popular y ligero para aplicaciones estáticas y renderizadas en
+                  servidor construidas con React. Integra soluciones de estilo y enrutamiento y
+                  asume que estás usando Node.js como ambiente de servidor.
+                - Referencia
+                    - https://nextjs.org/
+
+            - Gatsby
+                - Es la mejor manera de crear sitios web estáticos usando React. Te permite usar componentes React, pero genera HTML y CSS pre-renderizado para garantizar el tiempo de carga más rápido.
+                - https://www.gatsbyjs.org/
+
+            - Cadenas de herramientas más flexibles
+                - Neutrino combina el poder de webpack con la simplicidad de los presets (configuraciones preempaquetadas), e incluye presets para aplicaciones React y componentes React.
+                - Parcel es un empaquetador de aplicaciones web rápido y de cero configuración que funciona con React.
+                - Razzle es un framework de renderizado en servidor que no requiere ninguna configuración, pero ofrece más flexibilidad que Next.js.
+
+            
+
+
+
+
+
+
