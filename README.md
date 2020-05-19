@@ -12,3 +12,5 @@
 010 -> RENDERIZADO DE ELEMENTOS
 011 -> COMPONENTES Y PROPIEDADES
 012 -> Las props son de solo lectura
+013 -> Estado y ciclo de vida
+
